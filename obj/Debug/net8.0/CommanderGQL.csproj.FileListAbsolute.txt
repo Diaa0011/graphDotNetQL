@@ -161,3 +161,4 @@ E:\AfterGraduation\.Net_Projects\CommanderGQL\obj\Debug\net8.0\refint\CommanderG
 E:\AfterGraduation\.Net_Projects\CommanderGQL\obj\Debug\net8.0\CommanderGQL.pdb
 E:\AfterGraduation\.Net_Projects\CommanderGQL\obj\Debug\net8.0\CommanderGQL.genruntimeconfig.cache
 E:\AfterGraduation\.Net_Projects\CommanderGQL\obj\Debug\net8.0\ref\CommanderGQL.dll
+E:\AfterGraduation\.Net_Projects\CommanderGQL\obj\Debug\net8.0\CommanderGQL.sourcelink.json

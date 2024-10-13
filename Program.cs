@@ -4,11 +4,12 @@ using GraphQL.Server.Ui.Voyager;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(
+//AddPooledDbContextFactory is used to create a pool of DbContext instances - we can use the same DbContext more than one time 
+//enable the use of the DbContext in the GraphQL schema(paralled usage)
+builder.Services.AddPooledDbContextFactory<AppDbContext>(opt => opt.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")
 ));
-builder.Services.AddGraphQLServer().AddQueryType<Query>();
+builder.Services.AddGraphQLServer().AddQueryType<Query>().AddProjections();
 var app = builder.Build();
 
 app.UseRouting();
