@@ -24,7 +24,6 @@ namespace CommanderGQL.GraphQL.Platforms
             public IQueryable<Command> GetCommands([Parent] Platform platform, [ScopedService] AppDbContext context)
             {
                 return context.Commands.Where(p => p.PlatformId == platform.Id);
-                //return context.Commands.Where(p => p.PlatformId == platform.Id);
             }
         }
     }

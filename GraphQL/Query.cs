@@ -10,7 +10,8 @@ namespace CommanderGQL.GraphQL
         //UseProjection is used to enable the projection of the data from the database
         //meaning to conclude each child in the parent object such as the commands in the platform -must be added in program.cs in graphql adding part too- 
         //[UseProjection]
-        
+        [UseFiltering]
+        [UseSorting]
         public IQueryable<Platform> GetPlatform([ScopedService] AppDbContext context)
         {
             return context.Platforms;
@@ -18,6 +19,8 @@ namespace CommanderGQL.GraphQL
 
         [UseDbContext(typeof(AppDbContext))]
         //[UseProjection]
+        [UseFiltering]
+        [UseSorting]
         public IQueryable<Command> GetCommand([ScopedService] AppDbContext context)
         {
             return context.Commands;
