@@ -1,5 +1,12 @@
 # GraphDotNetQL
 This project is built upon Les Jackson's tutorial on GraphQL API with .NET 5 and Hot Chocolate. You can watch the tutorial video [here](https://www.youtube.com/watch?v=HuN94qNwQmM)
+<div align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/640px-Microsoft_.NET_logo.svg.png" alt=".Net" width="100"/>
+<img src="https://github.com/ChilliCream/hotchocolate-logo/blob/master/img/hotchocolate-banner.svg" alt="HotChocolate" width="200"/>
+<img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/graphql_logo_icon_171045.png" alt="GraphQL" width="200"/>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY5mmZmMEmf6eimSHMx2WI_9Yx631cZEpG1w&s" alt="WebSockets" width="150"/>
+
+</div>
 
 ## Overview
 GraphDotNetQL is a sample project demonstrating how to build a GraphQL API with .NET, featuring CRUD operations, filtering, sorting, and subscriptions.
