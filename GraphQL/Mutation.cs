@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore.Internal;
 
 namespace CommanderGQL.GraphQL
 {
+    [GraphQLDescription("Mutation operations (CRUD) for the platform and command entities.")]
     public class Mutation
     {
         //Platform Section

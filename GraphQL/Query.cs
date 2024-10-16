@@ -3,6 +3,7 @@ using CommanderGQL.Models;
 
 namespace CommanderGQL.GraphQL
 {
+    [GraphQLDescription("Represents the queries available.")]
     public class Query{
         //ScopedService & UseDbContext is used to create a new instance of the DbContext for each client request
         //enabling the use of the DbContext in the GraphQL schema mutiple times

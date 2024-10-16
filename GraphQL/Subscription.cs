@@ -2,6 +2,7 @@ using CommanderGQL.Models;
 
 namespace CommanderGQL.GraphQL
 {
+    [GraphQLDescription("Subscriptions available in the API for real-time updates.")]
     public class Subscription
     {
         [Subscribe]
