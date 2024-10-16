@@ -16,16 +16,20 @@ builder.Services
     .AddGraphQLServer()
     .AddQueryType<Query>()
     .AddMutationType<Mutation>()
+    .AddSubscriptionType<Subscription>()
     .AddType<PlatformType>()
     .AddType<CommandType>()
     .AddFiltering()
-    .AddSorting();
+    .AddSorting()
+    .AddInMemorySubscriptions();
     //.AddProjections();
     
 var app = builder.Build();
 
 app.UseRouting();
 app.UseEndpoints(endpoints => { endpoints.MapGraphQL(); });
+
+app.UseWebSockets();
 
 
 app.UseGraphQLVoyager("/voyager",new VoyagerOptions(){
