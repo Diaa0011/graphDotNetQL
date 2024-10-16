@@ -1,5 +1,5 @@
 using CommanderGQL.Models;
 namespace CommanderGQL.GraphQL.Commands
 {
-    public record AddCommandPayload(Command command);
+    public record CommandPayload(Command command);
 }

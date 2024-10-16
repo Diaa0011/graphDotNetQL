@@ -2,5 +2,5 @@ using CommanderGQL.Models;
 
 namespace CommanderGQL.GraphQL.Platforms
 {
-    public record AddPlatformPayLoad(Platform platform);
+    public record PlatformPayLoad(Platform platform);
 }
