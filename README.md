@@ -41,7 +41,14 @@ The project showcases various GraphQL capabilities using .NET technologies, incl
 * CRUD Operations: Completed the CRUD operations for platforms and commands, including payloads.
 * Subscriptions for CRUD: Added subscriptions for each CRUD operation to monitor real-time updates during runtime.
 
-## Installation
+## Get Started
+### Prerequisites
+* .NET 6.0 or later
+* Entity Framework Core
+* GraphQL & HotChocolate
+* WebSocket for real-time updates
+
+### Installation
 1. Clone the repository:
 ```
    git clone https://github.com/Diaa0011/graphDotNetQL/
