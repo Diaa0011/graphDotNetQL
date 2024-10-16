@@ -16,6 +16,10 @@ The project showcases various GraphQL capabilities using .NET technologies, incl
 * WebSocket-based subscriptions for real-time updates
 * Command and Platform models with corresponding mutations and queries
 
+## Application Architecture
+![image](https://github.com/user-attachments/assets/5b648b65-818f-4bf4-8706-bf01395e81b9)
+
+
 ## Features
 
 ### Initial Commit to GraphQL Voyager
