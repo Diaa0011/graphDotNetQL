@@ -55,15 +55,22 @@ The project showcases various GraphQL capabilities using .NET technologies, incl
 ```
    dotnet run
 ```
+5. adding migrations and create database
+```
+   dotnet ef migrations add "database setup" 
+```
+```
+   dotnet ef database update
+```
 5. Access GraphQL Voyager to explore the API:
 
 GraphQL API:
 ``` 
-http://localhost:<port>/graphql
+   http://localhost:<port>/graphql
 ```
 Voyager API: 
 ```
-http://localhost:<port>/voyager
+   http://localhost:<port>/voyager
 ```
 
 ## License
