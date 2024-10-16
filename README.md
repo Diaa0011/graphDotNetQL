@@ -73,6 +73,84 @@ Voyager API:
    http://localhost:<port>/voyager
 ```
 
+## Try this Queries: 
+*don't forget to put graphql api then make your request POST lastly put the previous code in the body of your request*!
+### Mutations
+```
+//Create a platform
+mutation{
+	addPlatform(input: {
+		name: "FORTRAN"
+	})
+	{
+		platform
+		{
+			id
+			name
+		}
+	}
+}
+
+//Create a command
+mutation{
+	addCommand(input: {
+		howTo: "mkdir"
+		commandLine: "creating new file"
+		platformId: 13
+	})
+	{
+		command{
+			id
+			howTo
+			commandLine
+			platform{
+				name
+			}
+		}
+	}
+	
+}
+//Edit a command
+mutation{
+	editCommand(input:{id:6,commandLine:"add migrations in vs"})
+	{
+		command{
+			id
+			howTo
+			commandLine
+			platform{
+				name
+			}
+		}
+	}
+}
+```
+### Queries 
+```
+//getting all the platforms
+query{
+	platform{
+		id 
+		name
+	}
+}
+//getting all the platforms and its commands
+query{
+	platform
+	{
+		id
+		name
+		commands
+		{
+			id 
+			howTo
+			commandLine
+		}
+	}
+}
+
+```
+
 ## License
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
 
